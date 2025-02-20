@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.your_queston {
+
+    margin-top: 250px;
+    width: 80%;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+
+
+
+.your_answer {
+    margin-top: 100px;
+    width: 80%;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+
+.tag {
+    margin-top: 100px;
+    width: 80%;
+    height: 100px;
+    border: 3px solid black;
+    margin-bottom: 200px;
+    border-radius: 20px;
+}
+
+
+
+
+ .costum-button {
+    width: 300px;
+    border-radius: 20px;
+
+ 
+}
