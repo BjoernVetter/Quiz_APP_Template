@@ -12,39 +12,39 @@
 
 <body>
     <header class="header">
-        <h1 class="header__title">Quiz-App</h1>
-    </header>
+        <h1 class="header__title">Quiz-App</h1></header>
     <main>
-        <section class="main">
 
-            
-            
-            <h2>your queston:</h2>
-            <textarea class="your_queston">
-                
-            </textarea>
-            
-            
-            <h2>Your answer:</h2>
-            <textarea class="your_answer">
-                
-                
-            </textarea>
-            
-            
-            <h2>Tag:</h2>
-            <textarea class="tag">
-                
-                
-            </textarea>
-            
-            
-            <button class="card__button-answer costum-button">Submit</button>
-            
-            
-            
-        </section>
+    
+        <form class="question-form">
+            <label class="question-form__input">
+                Question
+                <textarea name="Question" maxlength="150" data-js="question-input"></textarea>
+                <span class="question-form__character-count">0/150 </span>
+            </label>
 
+
+
+            <label class="question-form__input"> Answer
+
+                <textarea name="answer" maxlength="150" data-js="answer-character-count"></textarea>
+
+                <span class="question-form__character-count">0/150</span>
+            </label>
+
+            <label class="question-form__input">
+                Tag
+
+                <input type="text" name="tag" />
+            </label>
+
+            <button class="question-form__submit-button own" type="submit">Submit</button>
+        </form>
+
+        <ul class="card-list" data-js="card-container"></ul>
+        
+        
+        
     </main>
 
     <nav class="navigation">
@@ -65,7 +65,7 @@
             </li>
 
             <li class="navigation__list-item navigation__list-item--active">
-                <a class="navigation__link" href="index.html" aria-label="go to home page">
+                <a class="navigation__link" href="/form.html" aria-label="go to home page">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-plus">
@@ -82,7 +82,7 @@
 
 
             <li class="navigation__list-item">
-                <a class="navigation__link" href="profile.html" aria-label="go to profile page">
+                <a class="navigation__link" href="/profile.html" aria-label="go to profile page">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
                         <path
                             d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 9c2.7 0 5.8 1.29 6 2v1H6v-.99c.2-.72 3.3-2.01 6-2.01m0-11C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z" />
